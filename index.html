@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Chapter | 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fireworks-container" id="fireworksContainer"></div>
+    <div class="light-particles" id="lightParticles"></div>
+    <div class="stars-container" id="starsContainer"></div>
+    <div class="decorative-elements" id="decorativeElements"></div>
+
+    <!-- Page 1: New Year Cover -->
+    <div class="page active" id="page1">
+        <div class="background-glow"></div>
+        <div class="content-center">
+            <div class="hero-section">
+                <div class="hero-badge">A New Chapter</div>
+                <h1 class="hero-title">
+                    <span class="word-champagne">Happy</span>
+                    <span class="word-gold">New</span>
+                    <span class="word-white">Year,</span>
+                    <span class="word-wine">Appoosheyy</span>
+                </h1>
+                <p class="hero-description">Reflecting on our journey and embracing the beauty of what's next.</p>
+            </div>
+            
+            <div class="gift-container" id="giftBox">
+                <div class="gift-wrapper">
+                    <div class="gift-lid ny-lid">
+                        <div class="gift-seal">2026</div>
+                    </div>
+                    <div class="gift-base ny-base"></div>
+                </div>
+                <p class="gift-label">Step into the New Year</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: New Year Countdown -->
+    <div class="page" id="page2">
+        <div class="content-center">
+            <div class="countdown-display" id="nyCountdown">
+                <div class="countdown-label">Counting Down to 2026</div>
+                <div class="countdown-values">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="ny-days">00</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="ny-hours">00</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="ny-minutes">00</span>
+                        <span class="countdown-unit">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="ny-seconds">00</span>
+                        <span class="countdown-unit">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-section">
+                <h2 class="section-title">The Dawn of 2026</h2>
+                <p class="section-text">
+                    As we approach a new horizon, every second brings us closer to a fresh start. 
+                    Let's leave behind the weight of the past and step into a year defined 
+                    by our shared growth and the boundless potential of our journey together.
+                </p>
+            </div>
+            <button class="primary-button" onclick="nextPage(3)">Enter the Future</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Reflection -->
+    <div class="page" id="page3">
+        <div class="content-center">
+            <div class="countdown-display" id="countdownTimer">
+                <div class="countdown-label">Time Since Our Beginning</div>
+                <div class="countdown-values">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-unit">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-unit">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="moment-display">
+                <span class="moment-tag">The Beginning</span>
+                <div class="moment-time">
+                    <span class="time-value">9:00 PM</span>
+                    <span class="time-separator"></span>
+                    <span class="date-value">October 7</span>
+                </div>
+            </div>
+            <div class="text-section">
+                <h2 class="section-title">A Year of Transformation</h2>
+                <p class="section-text">
+                    Looking back at October 7th, 9:00 PM, I see the moment our worlds aligned. 
+                    This past year has been a testament to our growth—a journey of learning, 
+                    choosing each other daily, and building a foundation that transcends time.
+                </p>
+            </div>
+            <button class="primary-button" onclick="nextPage(4)">Continue</button>
+        </div>
+    </div>
+
+    <!-- Page 4: Gratitude -->
+    <div class="page" id="page4">
+        <div class="ambient-particles" id="particlesContainer"></div>
+        <div class="content-center">
+            <h2 class="section-title">Gratitude for the Journey</h2>
+            <div class="gratitude-list">
+                <div class="gratitude-card">
+                    <span class="card-number">01</span>
+                    <p class="card-text">For the quiet moments of understanding we built this year</p>
+                </div>
+                <div class="gratitude-card">
+                    <span class="card-number">02</span>
+                    <p class="card-text">For your unwavering support through every season</p>
+                </div>
+                <div class="gratitude-card">
+                    <span class="card-number">03</span>
+                    <p class="card-text">For the growth we experienced, even in the difficult times</p>
+                </div>
+                <div class="gratitude-card">
+                    <span class="card-number">04</span>
+                    <p class="card-text">For being my anchor in a world that never stops moving</p>
+                </div>
+                <div class="gratitude-card">
+                    <span class="card-number">05</span>
+                    <p class="card-text">For the love that made 2025 the most meaningful year yet</p>
+                </div>
+            </div>
+            <button class="primary-button" onclick="nextPage(5)">Continue</button>
+        </div>
+    </div>
+
+    <!-- Page 5: Manifestation & Growth -->
+    <div class="page" id="page5">
+        <div class="content-center">
+            <div class="vision-section">
+                <div class="hero-badge">Vision 2026</div>
+                <h2 class="section-title">Manifesting Our Next Chapter</h2>
+                <div class="growth-grid">
+                    <div class="growth-card">
+                        <div class="growth-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M12 2v20M2 12h20M12 2l4 4M12 2l-4 4M12 22l4-4M12 22l-4-4"/>
+                            </svg>
+                        </div>
+                        <h3>Boundless Growth</h3>
+                        <p>Evolving together through every challenge and celebration.</p>
+                    </div>
+                    <div class="growth-card">
+                        <div class="growth-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Timeless Devotion</h3>
+                        <p>Choosing each other in every moment, across every time zone.</p>
+                    </div>
+                    <div class="growth-card">
+                        <div class="growth-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                        </div>
+                        <h3>Shared Ambition</h3>
+                        <p>Building a future that reflects our highest aspirations.</p>
+                    </div>
+                </div>
+                <p class="vision-text">
+                    In 2026, we don't just wait for things to happen—we create them. 
+                    Together, we are a force of nature, blooming into our best selves.
+                </p>
+            </div>
+            <button class="primary-button" onclick="nextPage(6)">Believe in Us</button>
+        </div>
+    </div>
+
+    <!-- Page 6: The Promise -->
+    <div class="page" id="page6">
+        <div class="content-center">
+            <div class="manifestation-section">
+                <p class="manifest-text">Our Path Forward</p>
+                <p class="manifest-emphasis">Every New Chapter</p>
+                <p class="manifest-text">Always With You</p>
+                <p class="manifest-body">
+                    As the clock resets, my heart remains constant. I choose you 
+                    not just for today, but for every tomorrow that 2026 brings. 
+                    Let's write a year that reflects the depth of what we share.
+                </p>
+            </div>
+            <button class="primary-button" onclick="nextPage(7)">Continue</button>
+        </div>
+    </div>
+
+    <!-- Page 7: Forever -->
+    <div class="page" id="page7">
+        <div class="content-center">
+            <div class="finale-section">
+                <h1 class="finale-title">
+                    <span class="word-champagne">Happy</span>
+                    <span class="word-gold">New</span>
+                    <span class="word-white">Year,</span>
+                    <span class="word-wine">Appoosheyy</span>
+                </h1>
+                <p class="finale-subtitle">Here's to the beautiful years we have yet to live</p>
+                <div class="heart-icon" id="finalHeart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,85 C50,85 15,60 15,35 C15,22 22,15 30,15 C38,15 44,20 50,30 C56,20 62,15 70,15 C78,15 85,22 85,35 C85,60 50,85 50,85 Z" 
+                              fill="currentColor" 
+                              class="heart-path"/>
+                    </svg>
+                </div>
+                <p class="finale-message">Forever Yours</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
